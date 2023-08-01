@@ -11,6 +11,12 @@
 		BDAC38482A791AB200FEED36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38472A791AB200FEED36 /* ContentView.swift */; };
 		BDAC384A2A791AB400FEED36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC38492A791AB400FEED36 /* Assets.xcassets */; };
 		BDAC384D2A791AB400FEED36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC384C2A791AB400FEED36 /* Preview Assets.xcassets */; };
+		BDAC38542A791CFF00FEED36 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38532A791CFF00FEED36 /* AboutUsView.swift */; };
+		BDAC38562A791D1A00FEED36 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38552A791D1A00FEED36 /* QuizView.swift */; };
+		BDAC38582A791D2400FEED36 /* SecondQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38572A791D2400FEED36 /* SecondQuizView.swift */; };
+		BDAC385A2A791D2D00FEED36 /* ThirdQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */; };
+		BDAC385C2A791D3E00FEED36 /* QuizResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */; };
+		BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		BDAC38472A791AB200FEED36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDAC38492A791AB400FEED36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDAC384C2A791AB400FEED36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDAC38532A791CFF00FEED36 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		BDAC38552A791D1A00FEED36 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		BDAC38572A791D2400FEED36 /* SecondQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuizView.swift; sourceTree = "<group>"; };
+		BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuizView.swift; sourceTree = "<group>"; };
+		BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsView.swift; sourceTree = "<group>"; };
+		BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				BDAC38452A791AB200FEED36 /* ClimizApp.swift */,
 				BDAC38472A791AB200FEED36 /* ContentView.swift */,
+				BDAC38532A791CFF00FEED36 /* AboutUsView.swift */,
+				BDAC38572A791D2400FEED36 /* SecondQuizView.swift */,
+				BDAC38552A791D1A00FEED36 /* QuizView.swift */,
+				BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */,
+				BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */,
+				BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */,
 				BDAC38492A791AB400FEED36 /* Assets.xcassets */,
 				BDAC384B2A791AB400FEED36 /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDAC38582A791D2400FEED36 /* SecondQuizView.swift in Sources */,
+				BDAC385A2A791D2D00FEED36 /* ThirdQuizView.swift in Sources */,
 				BDAC38482A791AB200FEED36 /* ContentView.swift in Sources */,
+				BDAC38562A791D1A00FEED36 /* QuizView.swift in Sources */,
+				BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */,
+				BDAC38542A791CFF00FEED36 /* AboutUsView.swift in Sources */,
+				BDAC385C2A791D3E00FEED36 /* QuizResultsView.swift in Sources */,
 				BDAC38462A791AB200FEED36 /* ClimizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
