@@ -1,5 +1,5 @@
 # Climiz
-An app built with Swift to spread awareness about using resources sustainably 🌱
+### An app built with Swift to spread awareness about using resources sustainably 🌱
 
 ## How to use the app
 Simply clone it using Xcode and sideload to your device :)
