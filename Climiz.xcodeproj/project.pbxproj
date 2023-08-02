@@ -17,6 +17,8 @@
 		BDAC385A2A791D2D00FEED36 /* ThirdQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */; };
 		BDAC385C2A791D3E00FEED36 /* QuizResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */; };
 		BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */; };
+		BDAC38602A7A638300FEED36 /* FourthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */; };
+		BDAC38622A7A824300FEED36 /* FifthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38612A7A824300FEED36 /* FifthQuizView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdQuizView.swift; sourceTree = "<group>"; };
 		BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultsView.swift; sourceTree = "<group>"; };
 		BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuizView.swift; sourceTree = "<group>"; };
+		BDAC38612A7A824300FEED36 /* FifthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				BDAC38572A791D2400FEED36 /* SecondQuizView.swift */,
 				BDAC38552A791D1A00FEED36 /* QuizView.swift */,
 				BDAC38592A791D2D00FEED36 /* ThirdQuizView.swift */,
+				BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */,
+				BDAC38612A7A824300FEED36 /* FifthQuizView.swift */,
 				BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */,
 				BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */,
 				BDAC38492A791AB400FEED36 /* Assets.xcassets */,
@@ -157,6 +163,8 @@
 			files = (
 				BDAC38582A791D2400FEED36 /* SecondQuizView.swift in Sources */,
 				BDAC385A2A791D2D00FEED36 /* ThirdQuizView.swift in Sources */,
+				BDAC38602A7A638300FEED36 /* FourthQuizView.swift in Sources */,
+				BDAC38622A7A824300FEED36 /* FifthQuizView.swift in Sources */,
 				BDAC38482A791AB200FEED36 /* ContentView.swift in Sources */,
 				BDAC38562A791D1A00FEED36 /* QuizView.swift in Sources */,
 				BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */,
@@ -293,6 +301,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Climiz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Climiz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +331,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Climiz/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Climiz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
