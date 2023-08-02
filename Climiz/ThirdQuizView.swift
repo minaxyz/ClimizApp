@@ -18,7 +18,7 @@ struct ThirdQuizView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("How much shopping do you do for non-essential items?")
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Hardly any") {
@@ -27,7 +27,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(Color.red)
+                    .tint(Color.gray)
                     
                     Button("A few things a month") {
                         shopping = 3
@@ -35,7 +35,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.orange)
+                    .tint(.gray)
                     
                     Button("I buy quite a bunch of new things") {
                         shopping = 2
@@ -43,7 +43,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.yellow)
+                    .tint(.gray)
                     
                     Button("Some things every week") {
                         shopping = 0
@@ -51,7 +51,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(.gray)
                     
                     Button("#1 Impulse Buyer") {
                         shopping = 1
@@ -59,7 +59,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(.gray)
                     HStack{
                     Button("Basically a SHEIN hauler!") {
                         shopping = 3
@@ -67,7 +67,7 @@ struct ThirdQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.indigo)
+                    .tint(.gray)
                         
                         Spacer()
                         VStack {
@@ -100,3 +100,6 @@ struct ThirdQuizView_Previews: PreviewProvider {
         ThirdQuizView()
     }
 }
+// drag buttons down
+// colour button consistency
+// add what question number we are on

@@ -19,6 +19,7 @@
 		BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */; };
 		BDAC38602A7A638300FEED36 /* FourthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */; };
 		BDAC38622A7A824300FEED36 /* FifthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38612A7A824300FEED36 /* FifthQuizView.swift */; };
+		BDAC38642A7A9E7600FEED36 /* notthehomepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38632A7A9E7600FEED36 /* notthehomepage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
 		BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuizView.swift; sourceTree = "<group>"; };
 		BDAC38612A7A824300FEED36 /* FifthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizView.swift; sourceTree = "<group>"; };
+		BDAC38632A7A9E7600FEED36 /* notthehomepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notthehomepage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				BDAC38452A791AB200FEED36 /* ClimizApp.swift */,
 				BDAC38472A791AB200FEED36 /* ContentView.swift */,
+				BDAC38632A7A9E7600FEED36 /* notthehomepage.swift */,
 				BDAC38532A791CFF00FEED36 /* AboutUsView.swift */,
 				BDAC38572A791D2400FEED36 /* SecondQuizView.swift */,
 				BDAC38552A791D1A00FEED36 /* QuizView.swift */,
@@ -169,6 +172,7 @@
 				BDAC38562A791D1A00FEED36 /* QuizView.swift in Sources */,
 				BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */,
 				BDAC38542A791CFF00FEED36 /* AboutUsView.swift in Sources */,
+				BDAC38642A7A9E7600FEED36 /* notthehomepage.swift in Sources */,
 				BDAC385C2A791D3E00FEED36 /* QuizResultsView.swift in Sources */,
 				BDAC38462A791AB200FEED36 /* ClimizApp.swift in Sources */,
 			);

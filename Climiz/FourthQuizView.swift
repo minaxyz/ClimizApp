@@ -17,7 +17,7 @@ struct FourthQuizView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("Do you recycle?")
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     HStack {

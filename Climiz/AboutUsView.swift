@@ -19,7 +19,7 @@ struct AboutUsView: View {
 //                .cornerRadius(15.0)
 //                .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                 HStack(spacing: 150.0) {
-                    Text("About Climiz")
+                    Text("About Us")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.411, saturation: 0.97, brightness: 0.481))

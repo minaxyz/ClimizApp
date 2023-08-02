@@ -18,7 +18,7 @@ struct QuizView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("And how often do you use them?")
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Very little") {
@@ -27,7 +27,7 @@ struct QuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(Color.red)
+                    .tint(Color.gray)
                     
                     Button("Occasionally") {
                         howOften = 2
@@ -35,7 +35,7 @@ struct QuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.orange)
+                    .tint(.gray)
                     
                     Button("Sometimes") {
                         howOften = 3
@@ -43,7 +43,7 @@ struct QuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.yellow)
+                    .tint(.gray)
                     
                     Button("Often") {
                         howOften = 4
@@ -51,7 +51,7 @@ struct QuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(.gray)
                     
                     HStack{
                     Button("Extensively") {
@@ -60,7 +60,7 @@ struct QuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(.gray)
                         Spacer()
                             if buttonTapped{
                                 NavigationLink(destination: ThirdQuizView()) {

@@ -18,7 +18,7 @@ struct SecondQuizView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("What's your primary method of transport?")
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Car (non-electric, pre-2016") {
@@ -27,7 +27,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(Color.red)
+                    .tint(Color.gray)
                     
                     Button("Car (non-electric, post-2016") {
                         howPolluting = 3
@@ -35,7 +35,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.orange)
+                    .tint(.gray)
                     
                     Button("Car (electric)") {
                         howPolluting = 2
@@ -43,7 +43,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.yellow)
+                    .tint(.gray)
                     
                     Button("Walk / bike") {
                         howPolluting = 0
@@ -51,7 +51,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(.gray)
                     
                     Button("Public transport") {
                         howPolluting = 1
@@ -59,7 +59,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    .tint(.gray)
                     
                     Button("Motorbike") {
                         howPolluting = 3
@@ -67,7 +67,7 @@ struct SecondQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.indigo)
+                    .tint(.gray)
                     HStack{
                         
                         Button("Other") {
@@ -76,7 +76,7 @@ struct SecondQuizView: View {
                         }
                         .font(.title3)
                         .buttonStyle(.borderedProminent)
-                        .tint(.purple)
+                        .tint(.gray)
                         
                         Spacer()
                         VStack {

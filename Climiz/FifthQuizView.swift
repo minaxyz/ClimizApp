@@ -17,7 +17,7 @@ struct FifthQuizView: View {
                     .ignoresSafeArea()
                 VStack(alignment: .leading, spacing: 20.0) {
                     Text("And your water consumption? 💧") // Title
-                        .font(.title)
+                        .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Only take what I need") {
@@ -26,7 +26,7 @@ struct FifthQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(Color.red)
+                    .tint(Color.gray)
                     
                     Button("Bit liberal with how much I use") {
                         waterUsage = 3
@@ -34,7 +34,7 @@ struct FifthQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.orange)
+                    .tint(.gray)
                     
                     Button("Take a few too many baths...") {
                         waterUsage = 2
@@ -42,7 +42,7 @@ struct FifthQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.yellow)
+                    .tint(.gray)
                     HStack{
                     Button("Can I just see results? Not answering... it's too much 😅") {
                         waterUsage = 0
@@ -50,7 +50,7 @@ struct FifthQuizView: View {
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .tint(.gray)
                         
                     Spacer()
                     VStack {
