@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SecondQuizView: View {
-    @State private var howPolluting = 0
     @State private var buttonTapped = false
+    @EnvironmentObject var quizScores: QuizScores
     var body: some View {
         NavigationStack {
             
@@ -22,7 +22,8 @@ struct SecondQuizView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Car (non-electric, pre-2016") {
-                        howPolluting = 4
+                        quizScores.howPolluting = 4
+                        quizScores.totalScore += 4
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -30,7 +31,8 @@ struct SecondQuizView: View {
                     .tint(Color.gray)
                     
                     Button("Car (non-electric, post-2016") {
-                        howPolluting = 3
+                        quizScores.howPolluting = 3
+                        quizScores.totalScore += 3
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -38,7 +40,8 @@ struct SecondQuizView: View {
                     .tint(.gray)
                     
                     Button("Car (electric)") {
-                        howPolluting = 2
+                        quizScores.howPolluting = 2
+                        quizScores.totalScore += 2
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -46,7 +49,8 @@ struct SecondQuizView: View {
                     .tint(.gray)
                     
                     Button("Walk / bike") {
-                        howPolluting = 0
+                        quizScores.howPolluting = 0
+                        quizScores.totalScore += 0
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -54,7 +58,8 @@ struct SecondQuizView: View {
                     .tint(.gray)
                     
                     Button("Public transport") {
-                        howPolluting = 1
+                        quizScores.howPolluting = 0
+                        quizScores.totalScore += 0
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -62,16 +67,18 @@ struct SecondQuizView: View {
                     .tint(.gray)
                     
                     Button("Motorbike") {
-                        howPolluting = 3
+                        quizScores.howPolluting = 3
+                        quizScores.totalScore += 3
                         buttonTapped = true
                     }
                     .font(.title3)
                     .buttonStyle(.borderedProminent)
                     .tint(.gray)
+                    
                     HStack{
-                        
                         Button("Other") {
-                            howPolluting = 1
+                            quizScores.howPolluting = 4
+                            quizScores.totalScore += 4
                             buttonTapped = true
                         }
                         .font(.title3)

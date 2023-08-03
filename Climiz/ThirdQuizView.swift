@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ThirdQuizView: View {
-    @State private var shopping = 0
     @State private var buttonTapped = false
+    @EnvironmentObject var quizScores: QuizScores
+    
     var body: some View {
         NavigationStack {
             
@@ -22,7 +23,8 @@ struct ThirdQuizView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Hardly any") {
-                        shopping = 4
+                    quizScores.shopping = 0
+                    quizScores.totalScore += 0
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -30,7 +32,8 @@ struct ThirdQuizView: View {
                     .tint(Color.gray)
                     
                     Button("A few things a month") {
-                        shopping = 3
+                        quizScores.shopping = 1
+                        quizScores.totalScore += 1
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -38,7 +41,8 @@ struct ThirdQuizView: View {
                     .tint(.gray)
                     
                     Button("I buy quite a bunch of new things") {
-                        shopping = 2
+                        quizScores.shopping = 2
+                        quizScores.totalScore += 2
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -46,7 +50,8 @@ struct ThirdQuizView: View {
                     .tint(.gray)
                     
                     Button("Some things every week") {
-                        shopping = 0
+                        quizScores.shopping = 3
+                        quizScores.totalScore += 3
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -54,7 +59,8 @@ struct ThirdQuizView: View {
                     .tint(.gray)
                     
                     Button("#1 Impulse Buyer") {
-                        shopping = 1
+                        quizScores.shopping = 4
+                        quizScores.totalScore += 4
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -62,7 +68,8 @@ struct ThirdQuizView: View {
                     .tint(.gray)
                     HStack{
                     Button("Basically a SHEIN hauler!") {
-                        shopping = 3
+                        quizScores.shopping = 5
+                        quizScores.totalScore += 5
                         buttonTapped = true
                     }
                     .font(.title3)

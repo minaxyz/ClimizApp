@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct QuizView: View {
-    @State private var howOften = 0
     @State private var buttonTapped = false
+    @EnvironmentObject var quizScores: QuizScores
+    
     var body: some View {
         NavigationStack {
             
@@ -22,7 +23,8 @@ struct QuizView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Very little") {
-                        howOften = 1
+                        quizScores.howOften = 0
+                        quizScores.totalScore += 0
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -30,7 +32,8 @@ struct QuizView: View {
                     .tint(Color.gray)
                     
                     Button("Occasionally") {
-                        howOften = 2
+                        quizScores.howOften = 1
+                        quizScores.totalScore += 1
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -38,7 +41,8 @@ struct QuizView: View {
                     .tint(.gray)
                     
                     Button("Sometimes") {
-                        howOften = 3
+                        quizScores.howOften = 2
+                        quizScores.totalScore += 2
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -46,7 +50,8 @@ struct QuizView: View {
                     .tint(.gray)
                     
                     Button("Often") {
-                        howOften = 4
+                        quizScores.howOften = 3
+                        quizScores.totalScore += 3
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -55,7 +60,8 @@ struct QuizView: View {
                     
                     HStack{
                     Button("Extensively") {
-                        howOften = 5
+                        quizScores.howOften = 1
+                        quizScores.totalScore += 1
                         buttonTapped = true
                     }
                     .font(.title3)

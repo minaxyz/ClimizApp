@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FourthQuizView: View {
-    @State private var recycling = 0
     @State private var buttonTapped = false
+    @EnvironmentObject var quizScores: QuizScores
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -22,7 +23,8 @@ struct FourthQuizView: View {
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     HStack {
                     Button("Always") {
-                        recycling = 0
+                        quizScores.recycling = 0
+                        quizScores.totalScore += 0
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -30,7 +32,8 @@ struct FourthQuizView: View {
                     .tint(.green)
                         
                     Button("Never") {
-                        recycling = 1
+                        quizScores.recycling = 4
+                        quizScores.totalScore += 4
                         buttonTapped = true
                     }
                     .font(.title3)

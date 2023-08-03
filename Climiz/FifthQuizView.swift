@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct FifthQuizView: View {
-    @State private var waterUsage = 0 // Logs water score, changeable and doesn't leave
     @State private var buttonTapped = false // Shows results once tapped
+    @EnvironmentObject var quizScores: QuizScores
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -21,7 +22,7 @@ struct FifthQuizView: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.313, saturation: 1.0, brightness: 0.449))
                     Button("Only take what I need") {
-                        waterUsage = 4
+                        quizScores.water = 1
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -29,7 +30,7 @@ struct FifthQuizView: View {
                     .tint(Color.gray)
                     
                     Button("Bit liberal with how much I use") {
-                        waterUsage = 3
+                        quizScores.water = 1
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -37,7 +38,7 @@ struct FifthQuizView: View {
                     .tint(.gray)
                     
                     Button("Take a few too many baths...") {
-                        waterUsage = 2
+                        quizScores.water = 1
                         buttonTapped = true
                     }
                     .font(.title3)
@@ -45,7 +46,7 @@ struct FifthQuizView: View {
                     .tint(.gray)
                     HStack{
                     Button("Can I just see results? Not answering... it's too much 😅") {
-                        waterUsage = 0
+                        quizScores.water = 1
                         buttonTapped = true
                     }
                     .font(.title3)
