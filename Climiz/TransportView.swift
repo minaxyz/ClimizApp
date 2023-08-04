@@ -9,11 +9,17 @@ import SwiftUI
 
 struct TransportView: View {
     var body: some View {
+        
+        
         ZStack {
             Color(hue: 0.15, saturation: 1.0, brightness: 1.0)
                 .ignoresSafeArea()
-            VStack (alignment: .leading) {
+            VStack {
+                
+            
 
+            VStack (alignment: .leading) {
+                
                 HStack(spacing: 150.0) {
                     Text("Transport 🚕")
                         .font(.title)
@@ -41,15 +47,15 @@ struct TransportView: View {
                     .font(.headline)
                     .fontWeight(.medium)
                 NavigationLink(destination: ResourcesView()) {
-                            Text("Resources")
-                            .font(.title3)
-                            .frame(width: 115, height: 45, alignment: .center)
-                            .background(Color.yellow)
-                            .foregroundColor(Color.white)
-                            .cornerRadius(15)
+                    Text("Resources")
+                        .font(.title3)
+                        .frame(width: 115, height: 45, alignment: .center)
+                        .background(Color.yellow)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(15)
                 }
-                
             }
+            
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .background(Rectangle()
                 .foregroundColor(.white))
@@ -88,7 +94,7 @@ struct TransportView: View {
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode:
                                         .fit)
-                            
+                        }
                         }
                     }
                     
