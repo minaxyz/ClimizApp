@@ -61,6 +61,8 @@ struct FourthQuizView: View {
                 .padding()
             }
         } // ZStack
+        .environmentObject(QuizScores())
+
     }
 }
 

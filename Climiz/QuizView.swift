@@ -88,6 +88,8 @@ struct QuizView: View {
                 .padding()
             }
         } // ZStack
+        .environmentObject(QuizScores())
+
     }
 } // FirstQuestionView
 

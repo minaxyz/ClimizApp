@@ -99,6 +99,8 @@ struct ThirdQuizView: View {
                 .padding()
             }
         } // ZStack
+        .environmentObject(QuizScores())
+
     }
 }
 

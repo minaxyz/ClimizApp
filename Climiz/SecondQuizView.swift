@@ -108,6 +108,8 @@ struct SecondQuizView: View {
                 .padding()
             }
         } // ZStack
+        .environmentObject(QuizScores())
+
     }
 }
 

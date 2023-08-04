@@ -1,35 +1,54 @@
 //
-//  AboutUsView.swift
+//  WaterView.swift
 //  Climiz
 //
-//  Created by scholar on 01/08/2023.
-// change colour
+//  Created by scholar on 04/08/2023.
+//
 
 import SwiftUI
 
-struct AboutUsView: View {
+struct WaterView: View {
     var body: some View {
         ZStack {
-            Color(hue: 0.3, saturation: 0.25, brightness: 0.85)
+            Color(hue: 0.6, saturation: 0.5, brightness: 1.0)
                 .ignoresSafeArea()
             VStack (alignment: .leading) {
-                
-                             Image("IMG_7167")
-                              .resizable(resizingMode: .stretch)
-                               .aspectRatio(contentMode: .fit)
-                                .cornerRadius(15.0)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+
                 HStack(spacing: 150.0) {
-                    Text("About Us")
+                    Text("Water 💧")
                         .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.411, saturation: 0.97, brightness: 0.481))
+                        .foregroundColor(Color.blue)
+                    // Score added in later
                 }
                 Spacer()
                     .frame(height: 20)
-                Text("Climiz was created as a stand-alone project by a group of all-female code enthusiasts during a coding bootcamp. By addressing important issues like overconsumption, we can help people be more conscious of how they consume Earth's resources, learning a lot as they go!\n\nBut that's not all. We want to help create more change, with websites, apps and spreading awareness to as many people as possible. You can help by sharing the app or talk with us by <whatever>")
+                Text("Introduction\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("Water is a very important resource. Many of us take it for granted, however water scarcity is a real problem in many countries. Read more to find out more problems and how we can help to manage one of the most precious resources in the world.\n")
                     .font(.headline)
                     .fontWeight(.medium)
+                Text("\nWhat's the problem?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("Some places don't have enough clean water, leading to droughts and floods. Pollution makes water dirty and unsafe. Not everyone can access proper sanitation. Bad farming and cities growing too fast also harm water\n")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                Text("\nWhat can we do to help?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("• taking shorter showers / baths\n• collecting rainwater to use instead\n• using appliances with high efficiency\n• run appliances with full loads.\n• turn off taps when you don't use them\n")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                NavigationLink(destination: ResourcesView()) {
+                            Text("Resources")
+                            .font(.title3)
+                            .frame(width: 115, height: 45, alignment: .center)
+                            .background(Color.blue)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(15)
+                }
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .background(Rectangle()
@@ -76,10 +95,13 @@ struct AboutUsView: View {
                 }
             }
         }
+        .environmentObject(QuizScores())
+
     }
 }
-struct AboutUsView_Previews: PreviewProvider {
+
+struct WaterView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutUsView()
+        WaterView()
     }
 }

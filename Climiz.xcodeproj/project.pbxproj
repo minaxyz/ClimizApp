@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD5D3F712A7CF0E8008B4FAA /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D3F702A7CF0E8008B4FAA /* TransportView.swift */; };
+		BD5D3F732A7CF4E8008B4FAA /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D3F722A7CF4E8008B4FAA /* ShoppingView.swift */; };
+		BD5D3F752A7CF63C008B4FAA /* RecyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5D3F742A7CF63C008B4FAA /* RecyclingView.swift */; };
 		BDAC38462A791AB200FEED36 /* ClimizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38452A791AB200FEED36 /* ClimizApp.swift */; };
 		BDAC38482A791AB200FEED36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38472A791AB200FEED36 /* ContentView.swift */; };
 		BDAC384A2A791AB400FEED36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAC38492A791AB400FEED36 /* Assets.xcassets */; };
@@ -20,9 +23,14 @@
 		BDAC38602A7A638300FEED36 /* FourthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */; };
 		BDAC38622A7A824300FEED36 /* FifthQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38612A7A824300FEED36 /* FifthQuizView.swift */; };
 		BDAC38682A7BA2F700FEED36 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38672A7BA2F700FEED36 /* QuizData.swift */; };
+		BDAC386A2A7BEAC700FEED36 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC38692A7BEAC700FEED36 /* LaunchScreen.swift */; };
+		BDAC386C2A7CE88700FEED36 /* WaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAC386B2A7CE88700FEED36 /* WaterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD5D3F702A7CF0E8008B4FAA /* TransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportView.swift; sourceTree = "<group>"; };
+		BD5D3F722A7CF4E8008B4FAA /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
+		BD5D3F742A7CF63C008B4FAA /* RecyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclingView.swift; sourceTree = "<group>"; };
 		BDAC38422A791AB200FEED36 /* Climiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAC38452A791AB200FEED36 /* ClimizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimizApp.swift; sourceTree = "<group>"; };
 		BDAC38472A791AB200FEED36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +45,8 @@
 		BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthQuizView.swift; sourceTree = "<group>"; };
 		BDAC38612A7A824300FEED36 /* FifthQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthQuizView.swift; sourceTree = "<group>"; };
 		BDAC38672A7BA2F700FEED36 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		BDAC38692A7BEAC700FEED36 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		BDAC386B2A7CE88700FEED36 /* WaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,7 @@
 			children = (
 				BDAC38452A791AB200FEED36 /* ClimizApp.swift */,
 				BDAC38472A791AB200FEED36 /* ContentView.swift */,
+				BDAC38692A7BEAC700FEED36 /* LaunchScreen.swift */,
 				BDAC38532A791CFF00FEED36 /* AboutUsView.swift */,
 				BDAC38572A791D2400FEED36 /* SecondQuizView.swift */,
 				BDAC38552A791D1A00FEED36 /* QuizView.swift */,
@@ -78,6 +89,10 @@
 				BDAC385F2A7A638300FEED36 /* FourthQuizView.swift */,
 				BDAC38612A7A824300FEED36 /* FifthQuizView.swift */,
 				BDAC385B2A791D3E00FEED36 /* QuizResultsView.swift */,
+				BDAC386B2A7CE88700FEED36 /* WaterView.swift */,
+				BD5D3F702A7CF0E8008B4FAA /* TransportView.swift */,
+				BD5D3F722A7CF4E8008B4FAA /* ShoppingView.swift */,
+				BD5D3F742A7CF63C008B4FAA /* RecyclingView.swift */,
 				BDAC38672A7BA2F700FEED36 /* QuizData.swift */,
 				BDAC385D2A791D4F00FEED36 /* ResourcesView.swift */,
 				BDAC38492A791AB400FEED36 /* Assets.xcassets */,
@@ -166,12 +181,17 @@
 			files = (
 				BDAC38582A791D2400FEED36 /* SecondQuizView.swift in Sources */,
 				BDAC385A2A791D2D00FEED36 /* ThirdQuizView.swift in Sources */,
+				BDAC386C2A7CE88700FEED36 /* WaterView.swift in Sources */,
 				BDAC38602A7A638300FEED36 /* FourthQuizView.swift in Sources */,
 				BDAC38622A7A824300FEED36 /* FifthQuizView.swift in Sources */,
+				BD5D3F732A7CF4E8008B4FAA /* ShoppingView.swift in Sources */,
 				BDAC38682A7BA2F700FEED36 /* QuizData.swift in Sources */,
 				BDAC38482A791AB200FEED36 /* ContentView.swift in Sources */,
 				BDAC38562A791D1A00FEED36 /* QuizView.swift in Sources */,
+				BD5D3F752A7CF63C008B4FAA /* RecyclingView.swift in Sources */,
+				BD5D3F712A7CF0E8008B4FAA /* TransportView.swift in Sources */,
 				BDAC385E2A791D4F00FEED36 /* ResourcesView.swift in Sources */,
+				BDAC386A2A7BEAC700FEED36 /* LaunchScreen.swift in Sources */,
 				BDAC38542A791CFF00FEED36 /* AboutUsView.swift in Sources */,
 				BDAC385C2A791D3E00FEED36 /* QuizResultsView.swift in Sources */,
 				BDAC38462A791AB200FEED36 /* ClimizApp.swift in Sources */,
@@ -231,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -303,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Climiz/Preview Content\"";
+				DEVELOPMENT_TEAM = KXMQPJUH3Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Climiz;
@@ -333,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Climiz/Preview Content\"";
+				DEVELOPMENT_TEAM = KXMQPJUH3Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Climiz;

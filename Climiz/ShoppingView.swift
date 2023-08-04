@@ -1,35 +1,54 @@
 //
-//  AboutUsView.swift
+//  ShoppingView.swift
 //  Climiz
 //
-//  Created by scholar on 01/08/2023.
-// change colour
+//  Created by scholar on 04/08/2023.
+//
 
 import SwiftUI
 
-struct AboutUsView: View {
+struct ShoppingView: View {
     var body: some View {
         ZStack {
-            Color(hue: 0.3, saturation: 0.25, brightness: 0.85)
+            Color(hue: 0.95, saturation: 0.5, brightness: 1.0)
                 .ignoresSafeArea()
             VStack (alignment: .leading) {
-                
-                             Image("IMG_7167")
-                              .resizable(resizingMode: .stretch)
-                               .aspectRatio(contentMode: .fit)
-                                .cornerRadius(15.0)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+
                 HStack(spacing: 150.0) {
-                    Text("About Us")
+                    Text("Shopping 🛍️")
                         .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.411, saturation: 0.97, brightness: 0.481))
+                        .foregroundColor(Color.pink)
                 }
                 Spacer()
                     .frame(height: 20)
-                Text("Climiz was created as a stand-alone project by a group of all-female code enthusiasts during a coding bootcamp. By addressing important issues like overconsumption, we can help people be more conscious of how they consume Earth's resources, learning a lot as they go!\n\nBut that's not all. We want to help create more change, with websites, apps and spreading awareness to as many people as possible. You can help by sharing the app or talk with us by <whatever>")
+                Text("Introduction\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("Shopping is at the forefront of economics and keeping the world running. Commerce has been running for millenia, however modern times have given way to a consumer boom. So, how do we prevent this boom from becoming an explosion?\n")
                     .font(.headline)
                     .fontWeight(.medium)
+                Text("What's the problem?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("Many items, such as clothes are used only once then thrown away. This causes huge pile-ups in developing nations which also leaks dangerous chemicals into the soil, contaminating water and crops. This also gives way to child labour and exploitation due to the surge in demand.")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                Text("\nWhat can we do to help?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("• buy pre loved / second hand where possible\n• think twice- 'how much will I use it?'\n• support small businesses with sustainable initiatives\n• recycle / donate used items")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                NavigationLink(destination: ResourcesView()) {
+                            Text("Resources")
+                            .font(.title3)
+                            .frame(width: 115, height: 45, alignment: .center)
+                            .background(Color.pink)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(15)
+                }
+                
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .background(Rectangle()
@@ -76,10 +95,12 @@ struct AboutUsView: View {
                 }
             }
         }
+        .environmentObject(QuizScores())
     }
 }
-struct AboutUsView_Previews: PreviewProvider {
+
+struct ShoppingView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutUsView()
+        ShoppingView()
     }
 }

@@ -1,35 +1,54 @@
 //
-//  AboutUsView.swift
+//  RecyclingView.swift
 //  Climiz
 //
-//  Created by scholar on 01/08/2023.
-// change colour
+//  Created by scholar on 04/08/2023.
+//
 
 import SwiftUI
 
-struct AboutUsView: View {
+struct RecyclingView: View {
     var body: some View {
         ZStack {
-            Color(hue: 0.3, saturation: 0.25, brightness: 0.85)
+            Color(.green)
                 .ignoresSafeArea()
             VStack (alignment: .leading) {
-                
-                             Image("IMG_7167")
-                              .resizable(resizingMode: .stretch)
-                               .aspectRatio(contentMode: .fit)
-                                .cornerRadius(15.0)
-                        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+
                 HStack(spacing: 150.0) {
-                    Text("About Us")
+                    Text("Recycling ♻️")
                         .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(Color(hue: 0.411, saturation: 0.97, brightness: 0.481))
+                        .foregroundColor(Color.green)
                 }
                 Spacer()
                     .frame(height: 20)
-                Text("Climiz was created as a stand-alone project by a group of all-female code enthusiasts during a coding bootcamp. By addressing important issues like overconsumption, we can help people be more conscious of how they consume Earth's resources, learning a lot as they go!\n\nBut that's not all. We want to help create more change, with websites, apps and spreading awareness to as many people as possible. You can help by sharing the app or talk with us by <whatever>")
+                Text("Introduction\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("You may have seen bins for recycling and dumped a bottle or two in there. But did you know that 90% of waste put in the bins isn't actually recycled, only worsening the problem? Read on to find out how you can help to recycle more.\n")
                     .font(.headline)
                     .fontWeight(.medium)
+                Text("What's the problem?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("Many people don't know how to recycle properly, or just underestimate the impact of littering. This causes atrocities like the Great Pacific Garbage Patch and landfills leaking chemicals into the soil. And incinerating rubbish generates lots of greenhouse gases, furthering climate change.")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                Text("\nWhat can we do to help?\n")
+                    .font(.headline)
+                    .fontWeight(.bold)
+                Text("• clean out rubbish and squash it before placing it in the recycling\n• participate in local litter-picks and encourage friends and families to not litter\n• donate used items to charity \n• upcycle - make new things out of old")
+                    .font(.headline)
+                    .fontWeight(.medium)
+                NavigationLink(destination: ResourcesView()) {
+                            Text("Resources")
+                            .font(.title3)
+                            .frame(width: 115, height: 45, alignment: .center)
+                            .background(Color.green)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(15)
+                }
+                
             }
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .background(Rectangle()
@@ -76,10 +95,12 @@ struct AboutUsView: View {
                 }
             }
         }
+        .environmentObject(QuizScores())
     }
 }
-struct AboutUsView_Previews: PreviewProvider {
+
+struct RecyclingView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutUsView()
+        RecyclingView()
     }
 }
